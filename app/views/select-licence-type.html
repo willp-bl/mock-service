@@ -1,0 +1,57 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block pageTitle %}
+Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Are you applying for a canoe licence or a Koala licence?</h1>
+
+        <div class="govuk-inset-text">If you have already applied for a licence in the last 2 days please wait for your
+            confirmation to arrive.
+        </div>
+
+        <form action="/licence-select" method="post" novalidate>
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <div class="govuk-radios" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="canoe-or-koala" name="canoe-or-koala" type="radio"
+                                   value="canoe">
+                            <label class="govuk-label govuk-radios__label" for="canoe-or-koala">
+                                Canoe
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="canoe-or-koala-2" name="canoe-or-koala"
+                                   type="radio" value="koala">
+                            <label class="govuk-label govuk-radios__label" for="canoe-or-koala-2">
+                                Koala
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </form>
+
+    </div>
+
+</div>
+</div>
+
+{% endblock %}

@@ -9,3 +9,5 @@ public/
 # General ignores
 .DS_Store
 .idea
+
+.tmp
