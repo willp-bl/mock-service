@@ -1,0 +1,11 @@
+
+# Node.js ignores
+node_modules/
+
+# Prototype ignores - per-user
+.env
+public/
+
+# General ignores
+.DS_Store
+.idea
