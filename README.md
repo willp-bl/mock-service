@@ -1,6 +1,6 @@
 # mock-service
 
-Using the GOV.UK Prototype Kit to create a mock service
+Using the GOV.UK Prototype Kit to create a completely made up mock service, to test out using the prototype kit
 
 Initialised using `npx govuk-prototype-kit create`
 
